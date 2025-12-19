@@ -7,8 +7,6 @@
     padding: 7px 25px;
     font-weight: var(--fw-sm);
     font-size: 14px;
-    transition: var(--transition);
-    box-shadow: var(--box-shadow);
 }
 
 .subscribebtn {
@@ -17,12 +15,10 @@
     border: 2px solid transparent;
     font-weight: var(--fw-sm);
     font-size: 14px;
-    transition: var(--transition);
-    box-shadow: var(--box-shadow);
     height: 100%;
 }
 
-/* Hover Effects */
+/* Hover / Effects */
 .mainbtn:hover {
     background: transparent;
     color: var(--text-primary);
@@ -33,4 +29,10 @@
     background: transparent;
     color: var(--secondary);
     border: 2px solid var(--brown);
+}
+
+.mainbtn,
+.subscribebtn {
+    transition: var(--transition);
+    box-shadow: var(--box-shadow);
 }

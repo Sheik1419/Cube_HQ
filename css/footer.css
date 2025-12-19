@@ -53,10 +53,15 @@
     font-size: 14px;
 }
 
+.footer form a,
 .footer form p {
     color: var(--secondary);
     font-weight: var(--fw-sm);
     font-size: 12px;
+}
+
+.footer form a {
+    text-decoration: underline;
 }
 
 .footer .footer-main form input {
