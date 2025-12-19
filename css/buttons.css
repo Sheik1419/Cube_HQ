@@ -1,0 +1,36 @@
+/* Buttons */
+.mainbtn {
+    border-radius: 30px;
+    background: var(--main-gradient);
+    color: var(--secondary);
+    border: 2px solid transparent;
+    padding: 7px 25px;
+    font-weight: var(--fw-sm);
+    font-size: 14px;
+    transition: var(--transition);
+    box-shadow: var(--box-shadow);
+}
+
+.subscribebtn {
+    background: var(--brown);
+    color: var(--secondary);
+    border: 2px solid transparent;
+    font-weight: var(--fw-sm);
+    font-size: 14px;
+    transition: var(--transition);
+    box-shadow: var(--box-shadow);
+    height: 100%;
+}
+
+/* Hover Effects */
+.mainbtn:hover {
+    background: transparent;
+    color: var(--text-primary);
+    border: 2px solid var(--main);
+}
+
+.subscribebtn:hover {
+    background: transparent;
+    color: var(--secondary);
+    border: 2px solid var(--brown);
+}

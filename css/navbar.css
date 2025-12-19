@@ -1,0 +1,155 @@
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link,
+.navbar-nav .nav-link:hover {
+    color: var(--text-primary) !important;
+}
+
+.navbar-div {
+    padding: 5px 0px;
+    margin: auto;
+}
+
+.navbar.solid {
+    background: var(--secondary);
+    transition: background 1s ease 0s;
+    box-shadow: var(--box-shadow);
+}
+
+.navbar.solid ul .nav-link {
+    color: var(--text-dark);
+}
+
+.navbar {
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    padding: 0px;
+    background: transparent;
+    border: none;
+    transition: background 0.5s ease 0s;
+}
+
+.navbar-collapse,
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul .nav-link {
+    color: var(--text-dark);
+    font-weight: var(--fw-sm);
+    font-size: 14px;
+    text-align: center;
+}
+
+.navbar .nav-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-item i {
+    color: var(--text-primary);
+    font-size: 24px;
+}
+
+.navbar h2 {
+    background: var(--main-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    opacity: 60%;
+    font-weight: var(--fw-xxl);
+}
+
+@media screen and (min-width: 1290px) {
+
+    .navbar-div {
+        width: 90%;
+    }
+
+    .navbar ul .nav-link {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (min-width: 989px) and (max-width: 1290px) {
+
+    .navbar-div {
+        width: 98%;
+    }
+
+    .navbar-brand img {
+        height: 50px !important;
+    }
+
+    .navbar ul .nav-link {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 989px) {
+
+    .navbar-div {
+        width: 95%;
+        padding-block: 5px;
+    }
+
+    .responsive-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        width: 95%;
+    }
+
+    .navbar-brand {
+        display: none;
+    }
+
+    .navbar ul li {
+        padding: 5px 0px;
+    }
+
+    .responsive-button div .navbar-toggler {
+        background: var(--main);
+        color: var(--secondary);
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar .container-fluid {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .navbar-collapse {
+        padding: 0px 15px 10px 15px;
+    }
+
+    .toggler-icon {
+        position: relative;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+
+    /* Hide the current icon smoothly */
+    .navbar-toggler[aria-expanded="true"] .toggler-icon {
+        transform: rotate(180deg);
+        /* opacity: 0; */
+    }
+
+}
+
+@media screen and (min-width: 989px) {
+    .responsive-button {
+        display: none;
+    }
+}

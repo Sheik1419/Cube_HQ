@@ -1,0 +1,141 @@
+.footer {
+    background: var(--main);
+    padding: 50px 0px;
+}
+
+.footer-div {
+    margin: auto;
+}
+
+.footer-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-content {
+    margin-top: 30px;
+}
+
+.footer .footer-main {
+    display: grid;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.footer h2 {
+    color: var(--secondary);
+    font-size: 30px;
+    font-weight: var(--fw-xxl);
+}
+
+.footer h5 {
+    color: var(--secondary);
+    font-size: 15px;
+    font-weight: var(--fw-md);
+    margin-bottom: 20px;
+}
+
+.footer-main .nav-item {
+    margin-bottom: 15px;
+}
+
+.footer .nav-item i {
+    color: var(--secondary);
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.footer .nav-item a {
+    color: var(--secondary);
+    font-weight: var(--fw-sm);
+    font-size: 14px;
+}
+
+.footer form p {
+    color: var(--secondary);
+    font-weight: var(--fw-sm);
+    font-size: 12px;
+}
+
+.footer .footer-main form input {
+    background-color: transparent;
+    color: var(--secondary);
+    border: 2px solid var(--secondary);
+    font-weight: var(--fw-sm);
+    border-radius: 0px;
+    padding: 6px 10px;
+    font-size: 14px;
+}
+
+.footer .footer-main form input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.footer .footer-main form input::placeholder {
+    color: var(--secondary);
+    font-weight: var(--fw-sm);
+    font-size: 12px;
+}
+
+.form-inputs {
+    display: grid;
+    grid-template-columns: 70% 29%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1098px) {
+
+    .footer-div {
+        width: 90%;
+    }
+
+    .footer .footer-main {
+        grid-template-columns: 22% 22% 22% 34%;
+    }
+
+}
+
+@media screen and (min-width: 767px) and (max-width: 1098px) {
+
+    .footer .footer-div {
+        width: 90%;
+    }
+
+    .footer .footer-main {
+        grid-template-columns: 22% 22% 22% 34%;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .footer .footer-div {
+        width: 90%;
+    }
+
+    .footer-main {
+        display: flex !important;
+        flex-wrap: wrap;
+        column-gap: 20px;
+    }
+
+    .footer-item:nth-child(1),
+    .footer-item:nth-child(2),
+    .footer-item:nth-child(3) {
+        flex-grow: 1;
+    }
+
+    .footer-item:nth-child(4) {
+        width: 100%;
+    }
+
+    .footer-main .footer-item {
+        margin-bottom: 20px;
+    }
+
+}

@@ -1,0 +1,32 @@
+:root {
+    /* Colors / Effects */
+    --bg: #E2EAFF;
+    --main-gradient: linear-gradient(180deg, #032E15 0%, #016630 100%);
+    --main: #032E15;
+    --main-light: #D6EEDD;
+    --primary: #000;
+    --secondary: #FFF;
+    --light: #F3F3F3;
+    --text-primary: #032E15;
+    --text-secondary: #6F7577;
+    --text-tertiary: #322D2D;
+    --text-dark: #162456;
+    --border-dark: #919798;
+    --border-light: #CDCDCD;
+    --green: #009400;
+    --red: #DC2626;
+    --yellow: #FFD43D;
+    --brown: #653B09;
+    --box-shadow: 0 0 0.875rem 0 rgba(33, 37, 41, 0.05);
+    --transition: 0.5s ease-in-out;
+
+    /* Font */
+    --main-font: "Inter", sans-serif;
+    --fw-ms: 300;
+    --fw-sm: 400;
+    --fw-md: 500;
+    --fw-lg: 600;
+    --fw-xl: 700;
+    --fw-xxl: 800;
+    --fw-xxxl: 900;
+}
